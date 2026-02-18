@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Taylor's Cleaning Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">TAYLOR'S PRO CLEANING</div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+      <h1>Offered Services</h1>
+      <p>Thoughtfully tailored cleaning solutions designed to keep your space calm, polished, and welcoming.</p>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-grid">
+      <div class="service-card">
+        <h3>Home Cleaning</h3>
+        <p>Routine or one-time cleaning to keep your home fresh, comfortable, and beautifully maintained.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Office Cleaning</h3>
+        <p>Professional cleaning services that support a productive, organized, and welcoming workspace.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Deep Cleaning</h3>
+        <p>A detailed top-to-bottom clean that targets built-up grime, overlooked areas, and high-touch surfaces.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Move-In / Move-Out</h3>
+        <p>Ensure a smooth transition with a thorough clean designed for empty homes and apartments.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Organization</h3>
+        <p>Decluttering and organization services to help your space feel intentional and stress-free.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="services-cta">
+      <a href="contact.html" class="btn">Request a Quote</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Taylor's Pro Cleaning. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

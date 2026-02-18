@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taylor's Cleaning Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">TAYLOR'S PRO CLEANING</div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Landing Section -->
+  <section class="landing">
+    <div class="landing-content">
+      <h1>Welcome to Taylor's Pro Cleaning</h1>
+      <p>Professional, reliable, and detail-oriented home and office cleaning. Bringing sparkle and comfort to your space!</p>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </div>
+    <div class="landing-image">
+      <img src="images/stock-photo1.jpg" alt="Cleaning service photo">
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+<section class="services-preview">
+  <h2>Taylor's Services</h2>
+
+  <div class="services-cards">
+    <div class="service-card">
+      <h3>Home Cleaning</h3>
+      <p>
+        Routine or one-time home cleanings tailored to your space, schedule,
+        and lifestyle.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Office Cleaning</h3>
+      <p>
+        Professional cleaning for offices and workspaces to keep your business
+        fresh and welcoming.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Deep Cleaning</h3>
+      <p>
+        A detailed top-to-bottom clean perfect for seasonal refreshes or move-ins.
+      </p>
+    </div>
+  </div>
+
+  <a href="services.html" class="btn">See More</a>
+</section>
+
+
+  <!-- Home Testimonials -->
+  <section class="testimonials-page">
+    <h2>What Clients Say</h2>
+  
+    <div class="testimonial-carousel">
+      <div class="testimonial active">
+        <p>"Taylor did an amazing job! My home has never looked better."</p>
+        <span>— Jane D.</span>
+      </div>
+  
+      <div class="testimonial">
+        <p>"Reliable, friendly, and thorough. Highly recommend!"</p>
+        <span>— Mark T.</span>
+      </div>
+  
+      <div class="testimonial">
+        <p>"My office has never looked cleaner — amazing attention to detail!"</p>
+        <span>— Sarah K.</span>
+      </div>
+    </div>
+  
+    <a href="testimonials.html" class="btn">Read More</a>
+  </section>
+  
+  
+
+  <footer>
+    <p>© 2025 Taylor's Cleaning Services. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.querySelector('nav ul');
+    
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+    </script>
+
+  <script>
+    // Testimonial carousel
+    const testimonials = document.querySelectorAll('.testimonial-carousel .testimonial');
+    let currentIndex = 0;
+    const intervalTime = 5000; // 5 seconds
+
+    setInterval(() => {
+      testimonials[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % testimonials.length;
+      testimonials[currentIndex].classList.add('active');
+    }, intervalTime);
+  </script>
+
+    
+</body>
+</html>

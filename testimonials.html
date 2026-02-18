@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials - Taylor's Cleaning Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">TAYLOR'S PRO CLEANING</div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Testimonials Hero -->
+    <section class="testimonials-hero">
+      <h1>Kind Words From Clients</h1>
+      <p>Trusted by homeowners and businesses for thoughtful, detailed cleaning.</p>
+    </section>
+  
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="testimonials-grid">
+  
+        <div class="testimonial-card">
+          <p>"Taylor did an amazing job! My home has never looked better."</p>
+          <span>— Jane D.</span>
+        </div>
+  
+        <div class="testimonial-card">
+          <p>"Reliable, friendly, and thorough. Highly recommend!"</p>
+          <span>— Mark T.</span>
+        </div>
+  
+        <div class="testimonial-card">
+          <p>"She always goes above and beyond — super detailed and professional."</p>
+          <span>— Emily S.</span>
+        </div>
+  
+      </div>
+    </section>
+
+        <!-- Commercial Clients Section -->
+        <section class="commercial-clients">
+          <h2>Trusted by Local Businesses</h2>
+          <div class="client-logos">
+            <div class="client-logo">
+              <img src="images/logo-placeholder.png" alt="Les Schwab Logo">
+            </div>
+            <div class="client-logo">
+              <img src="images/logo-placeholder.png" alt="Total Tax Inc Logo">
+            </div>
+            <div class="client-logo">
+              <img src="images/logo-placeholder.png" alt="Other Client Logo">
+            </div>
+            <div class="client-logo">
+              <img src="images/logo-placeholder.png" alt="Another Client Logo">
+            </div>
+          </div>
+        </section>
+  
+  </main>
+
+  <footer>
+    <p>© 2025 Taylor's Cleaning Services. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
