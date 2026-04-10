@@ -16,11 +16,11 @@
    COLOR VARIABLES
 ------------------- */
 :root {
-  --eggshell: #dee6e9;
-  --charcoal: #32454d;
-  --soft-brown: #495b6e;
-  --sage-green: #c9d5db;
-  --dusty-pink: #9fb5c4;
+  --light-blue: #dee6e9;
+  --green-blue: #32454d;
+  --dark-blue: #495b6e;
+  --pale-blue: #c9d5db;
+  --grey-blue: #9fb5c4;
   --border-light: #e6e6e6;
 }
 
@@ -29,15 +29,15 @@
 ------------------- */
 body {
   font-family: "DM Sans", sans-serif;
-  background-color: var(--eggshell);
-  color: var(--charcoal);
+  background-color: var(--light-blue);
+  color: var(--green-blue);
   line-height: 1.7;
 }
 
 h1, h2, h3 {
   font-family: "Costaline", serif;
   font-weight: 100;
-  color: var(--soft-brown);
+  color: var(--dark-blue);
 }
 
 a {
@@ -49,7 +49,7 @@ a {
    HEADER / NAV
 ------------------- */
 header {
-  background: var(--eggshell);
+  background: var(--light-blue);
   border-bottom: 1px solid var(--border-light);
 }
 
@@ -78,11 +78,11 @@ nav a {
   font-size: 0.95rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--charcoal);
+  color: var(--green-blue);
 }
 
 nav a:hover {
-  color: var(--soft-brown);
+  color: var(--dark-blue);
 }
 
 /* ------------------
@@ -97,7 +97,7 @@ nav a:hover {
 .hamburger span {
   width: 26px;
   height: 2px;
-  background: var(--soft-brown);
+  background: var(--dark-blue);
   margin: 5px 0;
   transition: 0.3s;
 }
@@ -142,15 +142,15 @@ nav a:hover {
   font-size: 0.9rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: var(--soft-brown);
+  background: var(--dark-blue);
   color: white;
-  border: 1px solid var(--soft-brown);
+  border: 1px solid var(--dark-blue);
   transition: all 0.3s ease;
 }
 
 .btn:hover {
   background: transparent;
-  color: var(--soft-brown);
+  color: var(--dark-blue);
 }
 
 /* ------------------
@@ -205,7 +205,7 @@ nav a:hover {
 .secondary-btn {
   background-color: transparent;
   color: #6b4f3f;
-  border: 2px solid #e6c1c7; /* muted pink */
+  border: 2px solid #e6c1c7; 
   padding: 0.75rem 2rem;
 }
 
@@ -224,7 +224,7 @@ nav a:hover {
   background: url('images/IMG_5977.jpg') no-repeat center center;
   background-size: cover;
   padding: 80px 24px;
-  color: #ffffff; /* text color for contrast */
+  color: #ffffff; 
   text-align: center;
 }
 
@@ -262,7 +262,7 @@ nav a:hover {
   font-size: 0.85rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--soft-brown);
+  color: var(--dark-blue);
   font-family: "DM Sans", sans-serif;
 }
 
@@ -281,14 +281,14 @@ nav a:hover {
   width: 100%;
   opacity: 0;
   transition: opacity 2s ease-in-out;
-  pointer-events: none; /* prevents interaction on hidden cards */
+  pointer-events: none;
 }
 
 
 .testimonial-carousel .testimonial.active {
   opacity: 1;
   pointer-events: all;
-  position: relative; /* ensures current card pushes down container height */
+  position: relative; 
 }
 
 /* ------------------
@@ -358,14 +358,14 @@ nav a:hover {
   font-size: 0.85rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--soft-brown);
+  color: var(--dark-blue);
 }
 
 /* ------------------
    COMMERCIAL CLIENTS
 ------------------- */
 .commercial-clients {
-  background-color: var(--eggshell);
+  background-color: var(--light-blue);
   padding: 60px 24px;
   text-align: center;
 }
@@ -374,7 +374,7 @@ nav a:hover {
   font-size: 2rem;
   margin-bottom: 40px;
   font-family: "Costaline", serif;
-  color: var(--soft-brown);
+  color: var(--dark-blue);
 }
 
 .client-logos {
@@ -390,7 +390,7 @@ nav a:hover {
 .client-logo img {
   width: 120px;
   height: auto;
-  filter: grayscale(100%); /* muted placeholder look */
+  filter: grayscale(100%); 
   opacity: 0.7;
   transition: opacity 0.3s ease, filter 0.3s ease;
 }
@@ -426,7 +426,8 @@ footer {
     top: 70px;
     left: -100%;
     width: 100%;
-    background: var(--eggshell);
+    background: var(--light-blue
+);
     flex-direction: column;
     padding: 24px;
     gap: 20px;
@@ -465,10 +466,10 @@ footer {
 
 /* CONTROL IMAGE SIZE */
 .about-photo {
-  width: 320px;       /* controls how big it is */
+  width: 320px;       
   max-width: 100%;
   height: auto;
-  border-radius: 50%; /* optional: makes it a circle */
+  border-radius: 50%; 
   display: block;
   margin: 0 auto;
 }
@@ -505,7 +506,6 @@ footer {
   gap: 2rem;
 }
 
-/* Reuse your existing service-card style */
 .services-grid .service-card {
   background: #ffffff;
   padding: 2.5rem;
@@ -573,7 +573,7 @@ footer {
 }
 
 .contact-info a {
-  color: var(--soft-brown);
+  color: var(--dark-blue);
   text-decoration: underline;
 }
 
@@ -596,7 +596,7 @@ footer {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: var(--soft-brown);
+  border-color: var(--dark-blue);
   box-shadow: 0 0 8px rgba(73, 91, 110, 0.2);
 }
 
@@ -607,9 +607,9 @@ footer {
   font-size: 0.9rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: var(--soft-brown);
+  background: var(--dark-blue);
   color: white;
-  border: 1px solid var(--soft-brown);
+  border: 1px solid var(--dark-blue);
   border-radius: 12px;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -617,7 +617,7 @@ footer {
 
 .contact-form button:hover {
   background: transparent;
-  color: var(--soft-brown);
+  color: var(--dark-blue);
 }
 
 /* MOBILE RESPONSIVE */
