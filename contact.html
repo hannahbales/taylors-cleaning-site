@@ -45,10 +45,11 @@
           <p>Phone: <a href="tel:+2086595870">(208) 659-5870</a></p>
         </div>
 
-        <form action="https://formspree.io/f/xwvwgklb" method="POST">
-          <input type="email" name="email" required>
-          <textarea name="message" required></textarea>
-          <button type="submit">Send</button>
+        <form class="contact-form" action="https://formspree.io/f/xwvwgklb" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" name="submit" class="btn">Send Message</button>
         </form>
       </div>
     </section>
