@@ -626,3 +626,38 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* ------------------
+   THANK YOU PAGE
+------------------- */
+
+.thank-you {
+  min-height: 100vh;              /* full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;        /* vertical centering */
+  align-items: center;            /* horizontal centering */
+  text-align: center;
+  padding: 0 24px;
+  background-color: var(--eggshell);
+}
+
+.thank-you h1 {
+  font-family: "Costaline", serif;
+  font-size: 3rem;
+  margin-bottom: 16px;
+  color: var(--soft-brown);
+}
+
+.thank-you p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin-bottom: 32px;
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+
+.thank-you .btn {
+  display: inline-block;
+}
