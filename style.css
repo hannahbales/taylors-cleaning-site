@@ -67,6 +67,22 @@ header {
   font-size: 1.25rem;
 }
 
+/* ------------------
+   LOGO STYLING
+------------------- */
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: "Costaline", serif;
+  font-size: 1.25rem;
+}
+
+.logo-img {
+  height: 80px;   /* controls logo size */
+  width: auto;
+}
+
 /* NAV LINKS */
 nav ul {
   list-style: none;
@@ -340,7 +356,7 @@ nav a:hover {
 
 /* CARD */
 .testimonial-card {
-  background: #ffffff;
+  background: #ffffffbe;
   padding: 2.5rem;
   border-radius: 18px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
@@ -390,14 +406,8 @@ nav a:hover {
 .client-logo img {
   width: 120px;
   height: auto;
-  filter: grayscale(100%); 
   opacity: 0.7;
   transition: opacity 0.3s ease, filter 0.3s ease;
-}
-
-.client-logo img:hover {
-  opacity: 1;
-  filter: grayscale(0%);
 }
 
 
