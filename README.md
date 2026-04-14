@@ -24,7 +24,7 @@ Developed a responsive, production-ready business website for a local cleaning s
 
 ## 🛠️ Technical Implementation
 
-* Built using **HTML**, **JavaScript** and modern **CSS**
+* Built using **HTML** and modern **CSS**
 * Deployed via GitHub Pages with continuous deployment from the main branch
 * Configured custom domain through Namecheap, including DNS records (A + CNAME)
 * Integrated **Formspree** for backend-free form handling and email notifications
